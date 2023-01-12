@@ -1,0 +1,69 @@
+@import 'generic/_box-sizing.css';
+@import 'generic/_resets.css';
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica,
+    'Apple Color Emoji', Arial, sans-serif, 'Segoe UI Emoji', 'Segoe UI Symbol',
+    sans-serif;
+  font-size: 1.6rem;
+}
+
+.screen-phone {
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+
+  width: 390px;
+  height: 844px;
+
+  background: linear-gradient(#2d3436, #000000);
+
+  border-radius: 58px;
+  border: 8px solid black;
+
+  overflow: hidden;
+}
+
+.island {
+  position: absolute;
+  top: 12px;
+
+  width: 120px;
+  height: 32px;
+
+  background-color: black;
+  border-radius: 50vh;
+
+  transition: transform 0.2s ease;
+}
+
+.island:hover {
+  transform: scale(1.05);
+}
+.island:active {
+  transform: scale(0.95);
+}
+
+.top-bar {
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  height: 56px;
+  padding: 0 36px;
+
+  font-weight: 700;
+  color: white;
+}
